@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class TowDToOneD {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter number of rows: ");
@@ -13,7 +13,7 @@ class TowDToOneD {
             System.out.println("Rows and columns is positive.");
             return;
         }
-        int matrix[][] = new int[rows][columns];
+        int[][] matrix = new int[rows][columns];
 
         System.out.println("Enter elements");
         for (int i = 0; i < rows; i++) {
@@ -22,7 +22,7 @@ class TowDToOneD {
             }
         }
 
-        int array[] = new int[rows * columns];
+        int[] array = new int[rows * columns];
         int index = 0;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {

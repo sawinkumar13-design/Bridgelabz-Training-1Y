@@ -6,11 +6,11 @@ class FizzBuzz {
 
         System.out.print("Enter a positive integer: ");
         int number = input.nextInt();
-        if (number <= 0) {
+        if (number < 0) {
             System.out.println("enter a positive integer");
-            return;
-        }
-        String result[] = new String[number + 1];
+		    return;
+		}
+        String result[] = new String[number+1];
 
         for (int i = 1; i <= number; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
@@ -24,7 +24,7 @@ class FizzBuzz {
             }
         }
         for (int i = 1; i <= number; i++) {
-            System.out.println("Position " + i + " = " + result[i]);
-        }
+            System.out.println( i + " = " + result[i]);
+		}
     }
 }

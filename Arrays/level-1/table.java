@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-class Table{
-	public static void main (String args[]){
+class Table2{
+	public static void main (String[] args){
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("enter number");
